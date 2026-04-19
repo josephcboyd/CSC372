@@ -5,7 +5,7 @@ public class BankAccount {
     private double balance;
 
   
-
+    //constructor
     public BankAccount(String firstName, String lastName, int accountID) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -22,13 +22,13 @@ public class BankAccount {
     public int getAccountID()    { return accountID; }
     public double getBalance()   { return balance; }
 
-    // Adds the given amount to the balance
+    // adds the given amount to the balance
     public void deposit(double amount) {
         balance += amount;
         System.out.printf("Deposited: $%.2f%n", amount);
     }
 
-    // Subtracts the given amount from the balance
+    // subtracts the given amount from the balance
     public void withdrawal(double amount) {
         balance -= amount;
         System.out.printf("Withdrew: $%.2f%n", amount);
