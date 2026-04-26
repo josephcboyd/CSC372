@@ -107,19 +107,21 @@ BankAccountGui(String accountID, double startingBalance) {      // Used to speci
       double withAmount;     // amount to withdraw
       double curBal;       // current balance placeholder
 
-      // Get value from distance field
+      // Get value from withdraw field
       withAmount = ((Number) withdrawField.getValue()).doubleValue();
       curBal = ((Number) balanceField.getValue()).doubleValue();
-      // Check if miles input is positive
       if (withAmount >= 0.0) {
          curBal = curBal - withAmount;
          if (curBal < 0.0) {
             JOptionPane.showMessageDialog(this, "Cannot withdrawl, balancce would be negative!");
-            return;
+            withdrawField.setValue(0.0);
+
          }
+         if (curBal >= 0.0) {
          JOptionPane.showMessageDialog(this, "Money withdrawn, new balance is: $" + curBal);
          balanceField.setText(Double.toString(curBal));
          withdrawField.setValue(0.0);
+         }
       }
       else {
          // Show failure dialog
