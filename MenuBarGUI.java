@@ -46,7 +46,7 @@ public class MenuBarGUI extends JFrame {
         GridBagConstraints layoutConst = null;
 
         // Set frame's title
-        setTitle("GUI BANK INC.");
+        setTitle("Menu Bar");
         dateButton = new JMenuItem("Display Date"); 
         saveButton = new JMenuItem("Save Text");
         changeBackground = new JMenuItem("Change BackGround"); 
