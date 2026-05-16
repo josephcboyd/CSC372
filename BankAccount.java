@@ -3,8 +3,8 @@ public class BankAccount {
     private String lastName;
     private int accountID;
     private double balance;
+    private static final double OVERDRAFT_FEE = -30.00;
 
-  
     //constructor
     public BankAccount(String firstName, String lastName, int accountID) {
         this.firstName = firstName;
@@ -23,15 +23,20 @@ public class BankAccount {
     public double getBalance()   { return balance; }
 
     // adds the given amount to the balance
-    public void deposit(double amount) {
+    public void atm(double amount) { //updated to use a single method for deposits and withdrawls and logic for what message to display
         balance += amount;
-        System.out.printf("Deposited: $%.2f%n", amount);
-    }
-
-    // subtracts the given amount from the balance
-    public void withdrawal(double amount) {
-        balance -= amount;
-        System.out.printf("Withdrew: $%.2f%n", amount);
+        if (amount > 0) {
+            System.out.printf("Deposited: $%.2f%n", amount);
+        }
+        else 
+            {
+            System.out.printf("Withdrew: $%.2f%n", amount);
+        }
+        if (getBalance() < 0) {
+            balance += OVERDRAFT_FEE; // charge the overdraft fee
+            System.out.printf("Overdraft fee of $%.2f has been assessed.%n", OVERDRAFT_FEE);
+            System.out.printf("Current balance (with fee): $%.2f%n", getBalance());
+        }
     }
 
     public void accountSummary() {
