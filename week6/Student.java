@@ -2,9 +2,14 @@ public class Student {
     int rollno;
     String name;
     String address;
-    
 
-    public int getRollno() {
+    public void student(int rollno, String name, String address) { //constructor
+        this.rollno = rollno;
+        this.name = name;
+        this.address = address;
+    }
+
+    public int getRollno() { //getters and setters
         return this.rollno;
     }
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Source{
-    public static void selectionSort(ArrayList<Student> studentList, Comparator<Student> compareType) {
+    public static void selectionSort(ArrayList<Student> studentList, Comparator<Student> compareType) { //setting up selection sort to take array list and the comparetype as arguments
         int n = studentList.size();
         for (int i = 0; i < n - 1; i++){ //loops once for each object in arraylist
             int minIdx = i;
