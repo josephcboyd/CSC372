@@ -19,4 +19,4 @@ id,title,author,borrowed,isbn,pages
 18,The Count of Monte Cristo,Alexandre Dumas,true,978-0140449266,1276
 19,Dracula,Bram Stoker,false,978-0141439846,454
 20,Brave New World,Aldous Huxley,false,978-0060850524,311
-21,Atomic Habits,James Clear,true,978-0735211292,320
+21,Atomic Habits,James Clear,false,978-0735211292,320
