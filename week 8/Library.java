@@ -112,13 +112,6 @@ public class Library {
             return;
         }
 
-        System.out.print("Enter the Book Description: ");
-        String tempDesc = scnr.nextLine();
-        if (!verifyText(tempDesc)) {
-            System.out.println("Invalid entry: Description cannot be empty.");
-            return;
-        }
-
         System.out.print("Enter the Page count: ");
         String tempPages = scnr.nextLine();
 
@@ -129,7 +122,7 @@ public class Library {
 
         int pages = Integer.parseInt(tempPages);
 
-        Book tempBook = new Book(bookID, tempTitle, tempDesc, false, tempISBN, pages);
+        Book tempBook = new Book(bookID, tempTitle, tempAuth, false, tempISBN, pages);
         bookList.put(bookID, tempBook);
 
         System.out.printf("%s, by %s.%n%s - %d pages%n", tempTitle, tempAuth, tempISBN, pages);

@@ -13,9 +13,10 @@ id,title,author,borrowed,isbn,pages
 12,Anna Karenina,Leo Tolstoy,false,978-0143035008,864
 13,Pride and Prejudice,Jane Austen,false,978-0141439518,432
 14,Crime and Punishment,Fyodor Dostoevsky,true,978-0143107637,551
-15,The War of the Worlds,H.G. Wells,true,978-0141441030,192
+15,The War of the Worlds,H.G. Wells,false,978-0141441030,192
 16,Fahrenheit 451,Ray Bradbury,false,978-1451673319,158
 17,Jane Eyre,Charlotte Bronte,true,978-0142437209,507
 18,The Count of Monte Cristo,Alexandre Dumas,true,978-0140449266,1276
 19,Dracula,Bram Stoker,false,978-0141439846,454
 20,Brave New World,Aldous Huxley,false,978-0060850524,311
+21,Atomic Habits,James Clear,true,978-0735211292,320
